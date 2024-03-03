@@ -18,6 +18,11 @@ const handleSelect = (key: string, keyPath: string[]) => {
         <el-menu-item index="2-2">文本生成图像</el-menu-item>
         <el-menu-item index="2-3">智能证件照</el-menu-item>
       </el-sub-menu>
+      <el-sub-menu index="3">
+        <template #title>系统工具</template>
+        <el-menu-item index="3-1">粘贴板记录</el-menu-item>
+        <el-menu-item index="3-2">API设置</el-menu-item>
+      </el-sub-menu>
       <el-menu-item index="4">关于</el-menu-item>
     </el-menu>
 
@@ -25,15 +30,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 </template>
 
 <style scoped>
-.logo.vite:hover {
-  filter: drop-shadow(0 0 2em #747bff);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #249b73);
-}
-
 .el-menu-demo{
-  height:35px
+  height:30px
 }
 </style>
